@@ -1,10 +1,954 @@
-<!DOCTYPE html><html lang="zh_cn"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content="Chengyang,undefined"><meta name="copyright" content="Chengyang"><title> | CyanCity</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css?version=1.3"><script>var GLOBAL = { 
+<!DOCTYPE html><html lang="zh_cn"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content="Chengyang,undefined"><meta name="copyright" content="Chengyang"><title> | CyanCity</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.3"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><script>var GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
   },
   localSearch: undefined
-} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Chengyang</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">11</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">17</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">6</span></a></div></div></div><nav class="no-bg" id="nav" style="background-image: url(true);"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">CyanCity</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span></div><div id="site-info"><div id="site-title">CyanCity</div><div id="site-sub-title"></div><div id="site-social-icons"> <a class="social-icon" href="https://github.com/cyancity" target="_blank"><i class="fa fa-github"></i></a><a class="social-icon" href="https://weibo.com/5152568559/" target="_blank"><i class="fa fa-weibo"></i></a></div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item"><a class="article-title" href="/2018/01/13/一次项目重构产生问题的总结/">一次项目重构产生问题的总结</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-13</time><div class="content"></div><a class="more" href="/2018/01/13/一次项目重构产生问题的总结/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/12/免密码操作 Git 仓库/">免密码操作 Git 仓库</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-12</time><div class="content"></div><a class="more" href="/2018/01/12/免密码操作 Git 仓库/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/12/PHP中常见的回调函数风格/">PHP中常见的回调函数风格</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-12</time><div class="content"></div><a class="more" href="/2018/01/12/PHP中常见的回调函数风格/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/11/常用镜像源配置/">常用镜像源配置</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-11</time><div class="content"></div><a class="more" href="/2018/01/11/常用镜像源配置/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/10/一次服务器崩溃的问题分析和解决/">一次服务器宕机的分析和处理</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-10</time><div class="content"></div><a class="more" href="/2018/01/10/一次服务器崩溃的问题分析和解决/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/06/部署Homestead开发环境/">部署Homestead开发环境</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-06</time><div class="content"></div><a class="more" href="/2018/01/06/部署Homestead开发环境/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/04/CSS 定位详解/">CSS 定位详解</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-04</time><div class="content"></div><a class="more" href="/2018/01/04/CSS 定位详解/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2017/11/06/JavaScript 正则表达式/">JavaScript 正则表达式</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-11-06</time><div class="content"></div><a class="more" href="/2017/11/06/JavaScript 正则表达式/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2017/11/06/JavaScript的上下文 This/">JavaScript的上下文 This</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-11-06</time><div class="content"></div><a class="more" href="/2017/11/06/JavaScript的上下文 This/#more">阅读更多</a><hr></div><div class="recent-post-item"><a class="article-title" href="/2017/11/04/利用 JavaScript 中的 Getter Setter 创建私有变量/">利用 JavaScript 中的 Getter Setter 创建私有变量</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-11-04</time><div class="content"></div><a class="more" href="/2017/11/04/利用 JavaScript 中的 Getter Setter 创建私有变量/#more">阅读更多</a><hr></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2015 - 2018 By Chengyang</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.3"></script><script src="/js/fancybox.js?version=1.3"></script><script src="/js/sidebar.js?version=1.3"></script><script src="/js/copy.js?version=1.3"></script><script src="/js/fireworks.js?version=1.3"></script><script src="/js/transition.js?version=1.3"></script><script src="/js/scroll.js?version=1.3"></script><script src="/js/head.js?version=1.3"></script></body></html>
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Chengyang</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">13</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">18</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">7</span></a></div></div></div><nav class="no-bg" id="nav" style="background-image: url(true)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">CyanCity</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span></div><div id="site-info"><div id="site-title">CyanCity</div><div id="site-sub-title"></div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item"><a class="article-title" href="/2018/05/08/腾讯实习内推面经/">春招实习总结</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-05-08</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Internship/">Internship</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Summary/">Summary</a></span><div class="content"><h1 id="腾讯云实习前端内推面经"><a href="#腾讯云实习前端内推面经" class="headerlink" title="腾讯云实习前端内推面经"></a>腾讯云实习前端内推面经</h1><p>腾讯的经历比较曲折，3月8号在官网网申投递了WXG的前端实习生。后被SNG腾讯云捞起来面试。前三次面试，虽然自己有些紧张，但还好有惊无险，都通过了。第四面的时候，又是一个后端工程师再面我，说愿不愿意做全栈，但是偏后端，以PHP为主。我心想，PHP我啥也没准备，虽然经常用，但是原理却没有过多深究，都是看完文档就开始撸代码，果断说不想错，于是挂掉。第二天找人内推捞了简历。一面挂。过了一周左右，WXG来了电话，把简历捞起来，又重新面试。一面笔试加面试，二面挂。</p>
+<p>遂开始准备腾讯笔试，做的一般般，后来现场面的时候才知道，分很低。但还是收到了面试邀请，随后抵达上海腾讯面试现场。去的第一天下午，面试的是WXG的小哥，聊了聊，发现我提前批面过WXG，遂问之前同事挂的原因。</p>
+<h2 id="面试问题"><a href="#面试问题" class="headerlink" title="面试问题"></a>面试问题</h2><h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><ul>
+<li><p>是否接受部门调剂</p>
+<p>接受</p>
+</li>
+</ul>
+<ul>
+<li><p>为什么选择前端方向，是如何学习的</p>
+<p>略过</p>
+</li>
+<li><p>JavaScript 基础类型</p>
+<p>基本操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">undefined, null, number, string, boolean, symbol</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Git 操作，git 分支处理，如何解决冲突</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout &apos;branch name&apos; // 切换分支</span><br><span class="line">git branch &apos;branch name&apos; // 新建分支</span><br><span class="line">git checkout -b &apos;branch name&apos; // 新建并切换到该分支</span><br><span class="line">git merge orgin/master // 把当前分支合并到主分支</span><br></pre></td></tr></table></figure>
+<p>解决冲突</p>
+<p>冲突少，直接命令行中根据 git 提示，使用 vim 修改</p>
+<p>冲突多，使用 GUI 工具，例如 SourceTree 修改</p>
+</li>
+<li><p>如何进行前后端交互的</p>
+<ul>
+<li>XHRHttpRequest</li>
+<li>JQuery 或者 Axios</li>
+<li>Fetch</li>
+</ul>
+</li>
+<li><p>栈和队列的区别</p>
+<ul>
+<li>栈，先进后出</li>
+<li>队列，先进先出</li>
+</ul>
+</li>
+<li><p>JavaScript Array 的一些方法，哪些方法返回一个新数组</p>
+<p>  部分操作</p>
+</li>
+<li><p>常规操作：concat，splice，pop，push</p>
+<ul>
+<li>过滤操作：filter，some，every</li>
+</ul>
+</li>
+<li><p>Css 熟悉么，position 用法</p>
+</li>
+<li><p>前端开发使用哪些工具</p>
+</li>
+<li><p>Cookie，不同站点可以共享 Cookie 么</p>
+</li>
+<li><p>Web 安全，CSRF，XSS</p>
+</li>
+<li><p>常见跨域手段</p>
+</li>
+<li><p>JavaScript 事件机制</p>
+<ul>
+<li>事件冒泡，事件捕获</li>
+<li>事件绑定</li>
+<li>事件委托</li>
+</ul>
+</li>
+<li><p>浏览器存储</p>
+<ul>
+<li>Session Storage</li>
+<li>Indexed DB</li>
+<li>LocalStorage<ul>
+<li>微信小程序操作localstorage 的性能</li>
+<li>分为异步和同步操作，同步操作最低有500ms 的延迟，会导致页面阻塞</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>如何组件化开发的</p>
+<ul>
+<li>HTML，代码片段</li>
+<li>CSS，Stylus 预处理器</li>
+<li>JS，Import，Export</li>
+</ul>
+</li>
+<li><p>什么时候能来实习</p>
+<p>随时</p>
+</li>
+</ul>
+<h2 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h2><ul>
+<li><p>介绍一下 Promise</p>
+<ul>
+<li>我先说了没有 Promise 前异步操作的一些弊端，如回掉地狱</li>
+<li>Promise 首先是社区实现，随后加入了 ES6</li>
+<li>概括了一下 <a href="https://promisesaplus.com/" target="_blank" rel="noopener">Promise A+ 规范</a></li>
+<li>讲了一下 Promise 的三个状态<code>pending</code>,<code>fullfied</code>,<code>rejected</code></li>
+<li>resolve，reject 方法的使用场景，resolve 后返回一个新的 Promise 对象，如果这个对象是 thenable，那么可以使用 then 方法继续操作，我说到这里面试官就打断了我，说 ok 了。<ul>
+<li>（这里推荐读一些《你不知道的JavaScript》，回调其实是一种IOC容器，会产生信赖问题，不知道执行与否，异步还是同步。Promise可以解决。而 <code>async/await</code> 才算是真正解决了回调地狱的问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>OSI 模型</p>
+<ul>
+<li>7层模型，面试官又问了传输层和网络层的作用</li>
+</ul>
+</li>
+<li><p>TCP 协议，IP 协议</p>
+<ul>
+<li>简述了使用场景和解决的问题</li>
+</ul>
+</li>
+<li><p>Websocket 协议</p>
+<ul>
+<li>Html 5 新协议，基于 TCP 实现的双工通信</li>
+<li>该协议的应用场景，解决的问题</li>
+<li>连接的顺序是什么</li>
+</ul>
+</li>
+<li><p>HTTP 请求细节</p>
+<ul>
+<li>请求行，请求头</li>
+<li>响应行，响应头</li>
+</ul>
+</li>
+<li><p>HTTP 状态码</p>
+<p>问了 300 和 403</p>
+</li>
+<li><p>HTTP2 了解么</p>
+<ul>
+<li>Server Push</li>
+<li>多路复用</li>
+</ul>
+</li>
+<li><p>项目经历，遇到哪些问题</p>
+<p>略</p>
+</li>
+<li><p>有什么要问我的</p>
+<p>哪个部门，工作内容</p>
+<p>上午一面，晚上二面。流程还是挺快的，面试问题大多源于简历，我简历中写常用 ES6，Websocket，Vue 和微信小程序。基本上简历中的东西都闻到了，二面 HTTP 协议和网络部分问的比较多。</p>
+</li>
+</ul>
+<h2 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h2><p>感觉像是后端工程师在面试</p>
+<ul>
+<li>千万数据量的数据库设计和优化</li>
+<li>知道哪些数据库，优点确定，应用场景</li>
+<li>Cookie 和  Session 的应用场景，区别和共同点</li>
+<li>Http 协议，请求头，Tcp 握手，Http2</li>
+<li>数据结构和算法，口述一下快排</li>
+<li>智力题，有1000个苹果，10个箱子，每个箱子可以放任意数量苹果，但是只能放一次。分配完后，如果有任意数量的需求，10个箱子任意拼凑，都可以满足数量的要求。如何分配</li>
+</ul>
+<h2 id="四面"><a href="#四面" class="headerlink" title="四面"></a>四面</h2><p>悲剧了 </p>
+<h2 id="复活后的一面"><a href="#复活后的一面" class="headerlink" title="复活后的一面"></a>复活后的一面</h2><ul>
+<li>如何学习前端的</li>
+<li>遇到问题如何解决</li>
+<li>自学前端会不会基础薄弱，如何解决的</li>
+<li>平时都看什么书，从什么渠道获取知识。有哪些知名的博客或者作者。</li>
+<li>闭包<ul>
+<li>作用域链<ul>
+<li>略</li>
+</ul>
+</li>
+<li>垃圾回收<ul>
+<li>引用计数</li>
+<li>标记回收</li>
+<li>V8 分代</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>跨域<ul>
+<li>常用跨域方法</li>
+<li>Cors 设置什么可以跨域<ul>
+<li>Access-Control-Allow-Origin, 这几个单词当时没说出来，就说了是允许跨域的访问<ul>
+<li>问：可以设置什么值。 <ul>
+<li>*, 或者特定站点<ul>
+<li>问：如果有很多个站点如何配置<ul>
+<li>我说后端把特定站点放数组，根据来源动态设置 header，但是当时迷迷糊糊没说清楚。后来面试官，问多站点配置平时遇到过么，我说没有，正常都是一个站点。就此跳过</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Jsonp 实现原理<ul>
+<li>略</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Get 和 Post 区别<ul>
+<li>Get 是明文请求，参数放在 Url 中，长度有限制，get 请求浏览器有缓存</li>
+<li>Post 请求数据放在请求体中，Url 中看不到，长度无限制，根据 Restful 的语义，一般用来修改或者新建资源<ul>
+<li>问：Post 请求的数据真的获取不到么？<ul>
+<li>抓包可以获取到<ul>
+<li>问：解决办法呢？<ul>
+<li>加密传输<ul>
+<li>这个没答好，后来问了学长才清楚。</li>
+<li>加密传输的最佳实践是直接上 Https，除非中间人，否则抓不到</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Restful Api 有哪些请求方法</li>
+<li>Options 请求的应用场景<ul>
+<li>询问服务器允许的方法</li>
+<li>是否允许跨域<ul>
+<li>问：Options 请求可以避免么<ul>
+<li>简单请求和非简单请求<ul>
+<li>问：这两种请求的具体区别<ul>
+<li>只答上来请求头有区别，具体区别没答上来</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Web 安全，什么是 XSS，CSRF<ul>
+<li>问：CSRF 应用场景，如何实现的<ul>
+<li>避免跨站请求伪造</li>
+<li>我回答了后端常用框架 Laravel 的解决方案</li>
+<li>Meta 标签中插入 token</li>
+<li>隐藏表单插入 token</li>
+<li>Ajax 请求中设置 header<ul>
+<li>问：如果攻击者获取了用户的 Token 怎么办？<ul>
+<li>Token 每次页面刷新也都随之刷新<ul>
+<li>问：如果用户获取到 Token 时攻击者也获取到怎么办？<ul>
+<li>当时没答上来</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>平时如何使用 Ajax 发起请求的<ul>
+<li>使用第三方库，如 Axios</li>
+<li>问：有没有尝试实现过，知道具体原理么？</li>
+<li>没实现过</li>
+<li>利用 JS 原生对象 XHRHttpRequest</li>
+<li>问：如果利用 XHR 发起请求？<ul>
+<li>新建 XHR 对象</li>
+<li>open 方法中传入参数</li>
+<li>send 发送请求<ul>
+<li>问：如何监听 XHR 状态<ul>
+<li>onreadystatechange<ul>
+<li>问：有哪几个值？<ul>
+<li>0-4，具体意义没回答上来<ul>
+<li>问：如何判断请求是否成功？<ul>
+<li>判断onreadystatechange值即可<ul>
+<li>问： 真的么？<ul>
+<li>真的~~~<ul>
+<li>问：看来你高程还是没好好看，结合上一个 CSRF 问题，我也提到了框架，面试官批评了一下，不要总是依赖于框架</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Http 协议<ul>
+<li>基于 TCP 实现的应用层协议，请求无状态。<ul>
+<li>问：有哪些常用的请求头<ul>
+<li>基本操作<ul>
+<li>问：TCP 握手解释一下<ul>
+<li>三次握手，四次挥手<ul>
+<li>问：Http2<ul>
+<li>二进制传输</li>
+<li>多路复用</li>
+<li>Server Push</li>
+<li>请求头压缩<ul>
+<li>问：解释一下什么叫是多路复用和 Server Push<ul>
+<li>Server Push，通过服务端设置，当有一个请求到达时，主动发送其他设定好的其他文件，节省请求次数</li>
+<li>多路复用，关键时刻居然忘了，没打上来</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>看你简历写了常用 Websocket，讲讲什么是 Websocket<ul>
+<li>说了前几问没提到的，Websocket 也可以跨域</li>
+<li>基于 Socket，可以实现长连接<ul>
+<li>Websocket 如何实现请求验证<ul>
+<li>通过加密字协议，数据加入 token，数据加解密</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Node 用过么<ul>
+<li>我心想，总不能说没用过吧，就说一般使用 Node 工具 npm 进行包管理</li>
+<li>写过 Koa 的 demo （心想，我只写过 demo，这你应该就不问了吧）<ul>
+<li>问：Koa 的请求流程<ul>
+<li>没答出来，距离上次写 Koa Demo 已经是半年前，和没写过差不多。</li>
+<li>后来复习，发现是洋葱模型。使用中间件，利用 Generator 函数实现的。</li>
+<li>和之前使用的 Laravel 框架的中间件异曲同工，可惜当时没想到</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>项目中遇到的困难</li>
+<li>看你也写过小程序，我内测时也写过，讲讲有什么地方不好用的<ul>
+<li>吐槽不能用包管理，虽然有可替代方案，但是原生不支持。</li>
+<li>问题，表示遇到的都是小问题，基本都解决了<ul>
+<li>问：有哪些小问题？<ul>
+<li>一时还真没想起来</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>之前是怎么被拒的？<ul>
+<li>四面中提到过，略<ul>
+<li>问：你感觉是谁拒了谁    <ul>
+<li>我拒了他<ul>
+<li>问： 那你对后端感不感兴趣？这边也是腾讯云，之前面你的是平行部门。如果不感兴趣，就……<ul>
+<li>感兴趣，感兴趣。之前是感觉没提到 JavaScript 才说不感兴趣的<ul>
+<li>问：这边技术栈是 node，再学习有压力么？<ul>
+<li>没有，愿意学习</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如何评价你自己？</li>
+<li>你感觉自己的动手能力如何？</li>
+</ul>
+<h5 id="最后面试官说了一句，我看之前面试官对你的评价都挺好，所以这次问的深一点，但感觉……（沉默了半秒"><a href="#最后面试官说了一句，我看之前面试官对你的评价都挺好，所以这次问的深一点，但感觉……（沉默了半秒" class="headerlink" title="最后面试官说了一句，我看之前面试官对你的评价都挺好，所以这次问的深一点，但感觉……（沉默了半秒"></a>最后面试官说了一句，我看之前面试官对你的评价都挺好，所以这次问的深一点，但感觉……（沉默了半秒</h5><h5 id="我会将这次的面试情况客观的提交，再看接下来是否会有面试"><a href="#我会将这次的面试情况客观的提交，再看接下来是否会有面试" class="headerlink" title="我会将这次的面试情况客观的提交，再看接下来是否会有面试"></a>我会将这次的面试情况客观的提交，再看接下来是否会有面试</h5><p>​    听到这里，感觉已凉</p>
+<h4 id="3-27，一周后，回绝。"><a href="#3-27，一周后，回绝。" class="headerlink" title="3.27，一周后，回绝。"></a>3.27，一周后，回绝。</h4><p>WXG 一面（笔试+面试）</p>
+<h2 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h2><p>讲一下项目：提到了项目中使用的一些点，重构Ajax轮询，Websocket通信，</p>
+<ul>
+<li>websocket和ajax轮询相比，你认为有哪些缺点？优点就不说了，大家都知道。<ul>
+<li>前后台都需要配置，后端服务器还配置了反向代理，php 没有原生支持Websoket，使用了库解决的。讲了一下中间遇到的一些坑，<ul>
+<li>问：你提到了使用库，那你说说Websocket的实现原理（计算机网络）<ul>
+<li>讲了TCP/IP协议族，还有四层模型。websocket和http属于应用层协议。建立于TCP协议之上。三次握手，四次挥手。（每个点我都详细解释了）<ul>
+<li>问：讲讲从输入url到浏览器呈现页面发生了什么<ul>
+<li>略<ul>
+<li>问：Https请求和Http请求有什么区别？SSL握手讲一下<ul>
+<li>问TCP如何保证可靠通信？怎么解决丢包？有哪些具体方法？<ul>
+<li>对比了TCP和UDP的区别和联系，解释了滑动窗口，拥塞控制，慢开始。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Virtual Dom 原理，解决了什么问题。</li>
+</ul>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/05/08/春招实习总结/">春招实习总结</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-05-08</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Internship/">Internship</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Summary/">Summary</a></span><div class="content"><h1 id="春招实习总结"><a href="#春招实习总结" class="headerlink" title="春招实习总结"></a>春招实习总结</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5></li>
+<li><h5 id="面经"><a href="#面经" class="headerlink" title="面经"></a>面经</h5></li>
+<li><h5 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h5></li>
+<li><h5 id="总结与建议"><a href="#总结与建议" class="headerlink" title="总结与建议"></a>总结与建议</h5></li>
+</ul>
+<h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>不知名本科，信管专业，<del>自学前端半年多，喜提大厂Offer</del>。</p>
+<p>大一，接触iOS开发和Swift，奈何啥也不会，故三天打渔，两天晒网。编程能力没有什么提升。</p>
+<p>大二，写PHP，之后接触JS，愈发感兴趣，遂坚持学了下去。</p>
+<p>大三，开学前的暑假，得知有一些学长喜提大厂Offer，很羡慕，于是也想去。就开始默默准备。自己不太是一个喜欢问问题的人，除非憋了半个月实在不会，才会开口问人。大多数情况下，问题的解决方法全部来自搜索引擎。暑假留校写了一段时间的代码。开学后，接触了PUBG，然后一发不可收拾，从9月初玩到12月，游戏时常800小时+。到了学习末尾，亦得知来年3月各大厂会开始春招实习生，于是准备了两个月，从JS的基础语法，到新增特性。从数据结构到计算机网络，一并复习了一遍。虽然基础不算优秀，但也算达到了能去应聘的要求，于是找了学长内推Ali，在牛客网上投了一些简历。</p>
+<p>遇到编程问题，一般只需要按关键字搜索 Google 和 StackOverFlow 即可（英语要求++）</p>
+<h2 id="面经-1"><a href="#面经-1" class="headerlink" title="面经"></a>面经</h2><ul>
+<li><p>[ ] ### 腾讯</p>
+<p>腾讯战线较长，另起一篇。</p>
+</li>
+<li><p>[x] ### 阿里</p>
+</li>
+</ul>
+<h5 id="一面-（Team-Leader）"><a href="#一面-（Team-Leader）" class="headerlink" title="一面 （Team Leader）"></a>一面 （Team Leader）</h5><ul>
+<li>自我介绍</li>
+<li>Vue 双向绑定原理</li>
+<li>CSS 动画</li>
+<li>CSS 水平居中</li>
+<li></li>
+</ul>
+<h5 id="二面-（总监）"><a href="#二面-（总监）" class="headerlink" title="二面 （总监）"></a>二面 （总监）</h5><ul>
+<li>自我介绍</li>
+<li>学了什么专业课</li>
+<li>数据结构哪些比较熟悉<ul>
+<li>排序和二叉树<ul>
+<li>讲一下B树和B+树<ul>
+<li>快排和堆排序，口述实现。两者时间复杂度，最优和最差情况</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有什么职业规划</li>
+<li>为什么不投后端</li>
+<li>什么时候能过去实习</li>
+</ul>
+<h5 id="三面-HR"><a href="#三面-HR" class="headerlink" title="三面 (HR)"></a>三面 (HR)</h5><ul>
+<li>介绍下简历上的项目</li>
+<li>平时如何学习的<ul>
+<li>我就把我平时的学习方法和途径讲了一遍<ul>
+<li>感觉你还挺爱学习的，为什么简历上成绩写50%<ul>
+<li>如实回答，因为平时不去上课，考试都是飘过。时间都拿去写代码了。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>遇到的最大困难<ul>
+<li>这种问题，有两个解法，一个是技术上的，这个还是需要讲一下，但HR毕竟不是专职做技术，但是技术也是懂一些的。所以要细心回答</li>
+<li>第二种就是HR想了解你平时与人合作的时候遇到问题如何解决，这里就是想了解你的沟通协调能力。没表达好的话，很容易挂。</li>
+</ul>
+</li>
+<li>有没有女朋友</li>
+<li>什么时候能过来</li>
+<li>有什么要问我的</li>
+</ul>
+<h5 id="四面-交叉面-高P算法专家"><a href="#四面-交叉面-高P算法专家" class="headerlink" title="四面 (交叉面 高P算法专家)"></a>四面 (交叉面 高P算法专家)</h5><ul>
+<li>找到单链表交叉的第一个节点</li>
+<li>讲一下闭包</li>
+<li>讲一下快排实现<ul>
+<li>balabala<ul>
+<li>你这个解法空间复杂度略高，这种解法不能过关，需要优化（果然是算法大佬…）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一个跳台阶的问题（类似于斐波那契数列）</li>
+<li>有什么要问我的</li>
+</ul>
+<ul>
+<li style="list-style: none"><input type="checkbox"> ### 头条</li>
+</ul>
+<h5 id="免笔试内推"><a href="#免笔试内推" class="headerlink" title="免笔试内推"></a>免笔试内推</h5><p>可惜一面就挂了，约了视频面，结果面试的时候就是想睡觉。手撕一个闭包都没写上来，也不知道为什么脑子短路了。</p>
+<ul>
+<li>HTTP2 首部压缩和多路复用的实现原理</li>
+<li>CSRF和XSS</li>
+<li>手撕闭包</li>
+<li>setTimeout, setImmediate, process.nexttick, Promise执行顺序。JS事件循环</li>
+<li>算法题，最短递增子序列</li>
+<li><p>手撕JS，实现一个Lodash的get方法，没完全写对</p>
+</li>
+<li><p>[x] ### 京东</p>
+</li>
+</ul>
+<h5 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h5><ul>
+<li><p>例行自我介绍</p>
+</li>
+<li><p>WebSocket遇到超时如何解决。</p>
+<ul>
+<li>平时没遇到过，答了一个缩短服务器连接的超时时间。其他的没想起来，就直接说不知道。</li>
+</ul>
+</li>
+<li><p>常用跨域方法</p>
+<ul>
+<li>document.domain</li>
+<li>jsonp</li>
+<li>cors</li>
+<li>websocket</li>
+<li>讲了jsonp, cors, 和 WebSocket 的跨域实现和原理</li>
+</ul>
+</li>
+<li><p>Cookie 和 Session 区别联系</p>
+<ul>
+<li>略，基本操作</li>
+</ul>
+</li>
+<li><p>如何获取一个 DOM 元素，以及原生DOM操作</p>
+<ul>
+<li>document 对象方法<code>getElementById, getElementsByClassName, getElementsByTagName, querySelector</code>修改元素属性就用<code>setAttribute</code><ul>
+<li>用 jQuery 怎么做呢<ul>
+<li>没用过 jQuery，但知道用<code>$(&#39;&#39;)</code>来获取 DOM 对象，然后按照对象的方法来操作就行。（我说没用过 jQuery 面试官似乎很无语，问我用过什么，我说 vue）<ul>
+<li>那你讲讲这些框架有什么特点，你刚才提到 dom 操作耗时，为什么？用 vue 又能怎么样<ul>
+<li>我首先讲了 mvvm 框架的原理，然后说了 vue 双向绑定的特点以及优势，然后阐述 双向绑定的实现原理。又针对 dom 操作讲了一下 virtual dom。最后说 vue 并不能解决 dom 操作耗时的本质问题，只是优化了 dom 操作的流程。因为 dom 操作相对于 javascript 执行的脚本，确实慢了很多。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>盒子模型</p>
+<ul>
+<li>略，基本操作</li>
+</ul>
+</li>
+<li><p>什么是HTTP 协议，讲一下 HTTP 报文</p>
+<ul>
+<li>之前腾讯和阿里的面试都问过很多遍了，滚瓜烂熟。顺带把 http2也说了</li>
+</ul>
+</li>
+<li><p>get 和 post 区别</p>
+<ul>
+<li>略，基本操作</li>
+</ul>
+</li>
+<li><p>面试官看了一眼简历，会用PHP是吧，问你几个别的。字符串转 json，如何解决乱码问题</p>
+<ul>
+<li>json_encode, 设置响应报文字符集。</li>
+</ul>
+</li>
+<li><p>数据库如何解决Emoji表情存储乱码的问题</p>
+<ul>
+<li>设置字符集为 utf8mb4</li>
+</ul>
+</li>
+<li><p>如何解决 Session 共享问题</p>
+<ul>
+<li>说实话，我不知道。于是和面试官说后端使用的不多。后端没有前端研究的深。但是我感觉可以用 redis 来解决这个问题。<ul>
+<li>缓存穿透知道么。<ul>
+<li>我开始还以为是前端的缓存相关，但是没遇到过这个问题，又让面试官重说了一下。发现是后端redis的场景。直接回答不会。</li>
+<li>(不过前端也会遇到缓存穿透的问题，如CDN)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>后端架构了解多少</p>
+<ul>
+<li>我就说了一下之前了解过的，负载均衡，缓存服务器，数据库之类的扯了扯。<ul>
+<li>你做的项目多少台服务器<ul>
+<li>答：一台<ul>
+<li>那你跟我说说负载均衡怎么做<ul>
+<li>我说可以用反向代理来做，自己配置过反向代理<ul>
+<li>这是软代理，还有其他方法么<ul>
+<li>没遇到过这种场景，不知道（心累，没做过）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>后来手撕了代码，给定两个数组，一个从小到大排序，一个从大到小排序。要求合并数组并且从小到大排序。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a1 = [1,10,20,30,40]</span><br><span class="line">var a2 = [45,35,25,15,5]</span><br><span class="line"></span><br><span class="line">// 一行代码完事</span><br><span class="line">var newArr = Array.prototype.concat.apply(a1, a2).sort((a,b) =&gt; a-b)</span><br></pre></td></tr></table></figure>
+<p>问：写一个不用排序的方法</p>
+<ul>
+<li>答：emmmmm，说了一个思路，但是没有实现，不知道对不对。遍历 a1 数组，再遍历 a2数组，如果 a2数组的值，在 a1 某两个元素中间，splice 插入即可<ul>
+<li>问：不用 splice 呢<ul>
+<li>答：不知道，给点提示吧。<ul>
+<li>你看，一个从小到大，一个从大到小，两个直接错开插入就行<ul>
+<li>emmmm，没听懂。<ul>
+<li>后来面试官说差不多了，就到这吧。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>有什么问题要问我的</p>
+<ul>
+<li>所在部门的业务</li>
+<li>技术栈</li>
+</ul>
+</li>
+</ul>
+<h2 id="面试题-（与面试问题有重复）"><a href="#面试题-（与面试问题有重复）" class="headerlink" title="面试题 （与面试问题有重复）"></a>面试题 （与面试问题有重复）</h2><ul>
+<li>inline 和 block 的区别，什么是替换元素</li>
+<li>Position</li>
+<li><a href="http://www.cnblogs.com/2050/p/3392803.html" target="_blank" rel="noopener">CSS 水平居中</a></li>
+<li>闭包</li>
+<li>HTTP 请求方法，状态码</li>
+<li><a href="http://jerryzou.com/posts/cookie-and-web-storage/" target="_blank" rel="noopener">cookie session localstorage sessionstorage</a></li>
+<li>事件委托，DOM事件模型</li>
+<li>XHRHttpRequest</li>
+<li><a href="https://segmentfault.com/a/1190000013131068" target="_blank" rel="noopener">深拷贝</a></li>
+<li>进程间通信 （管道，信号量，共享内存，消息队列，信号， 套接字）</li>
+<li><a href="https://www.jianshu.com/p/278e93e5b1fb" target="_blank" rel="noopener">HTTP缓存控制</a></li>
+<li>对称加密和非对称加密 </li>
+<li><a href="https://www.youtube.com/watch?v=l2Tu0NqH0qU&amp;t=1213s" target="_blank" rel="noopener">VirtualDOM</a></li>
+<li>Vuex<a href="https://tech.meituan.com/vuex-code-analysis.html" target="_blank" rel="noopener">源码</a></li>
+<li>设计模式</li>
+<li>Set 和 Map 数据结构</li>
+<li>WeakMap 和 Map 的区别?</li>
+<li>重排和重绘</li>
+<li><a href="https://legacy.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/details" target="_blank" rel="noopener">函数式编程</a></li>
+</ul>
+<h3 id="算法类"><a href="#算法类" class="headerlink" title="算法类"></a>算法类</h3><ul>
+<li><a href="https://blog.csdn.net/liuchenjane/article/details/70362535" target="_blank" rel="noopener">JS 实现无序和有序数组的二分查找</a></li>
+<li><a href="https://juejin.im/entry/59a7e4b3518825243507b492" target="_blank" rel="noopener">贪心算法</a></li>
+<li>堆排序，介绍一下堆的调整过程及其时间复杂度</li>
+<li><a href="https://hit-alibaba.github.io/interview/basic/algo/DP.html" target="_blank" rel="noopener">动态规划</a></li>
+</ul>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
+<li><a href="https://hit-alibaba.github.io/interview/basic/network/TCP.html" target="_blank" rel="noopener">TCP相关</a></li>
+<li><a href="http://www.cnblogs.com/lizhenghn/p/5155933.html" target="_blank" rel="noopener">WebSocket</a></li>
+</ul>
+<h3 id="辅助读物"><a href="#辅助读物" class="headerlink" title="辅助读物"></a>辅助读物</h3><ul>
+<li>Teach Yourself Computer <a href="https://zhuanlan.zhihu.com/p/34661143" target="_blank" rel="noopener">Science</a></li>
+</ul>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul>
+<li>数据库的索引用了什么数据结构，为什么用B/B+树，而不用其他数据结构，为什么不用红黑树</li>
+<li><a href="https://blog.csdn.net/zeb_perfect/article/details/54135506" target="_blank" rel="noopener">缓存穿透</a></li>
+<li><a href="https://blog.csdn.net/qq_16681169/article/details/75138876" target="_blank" rel="noopener">缓存</a></li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><a href="http://ifeve.com/producers-and-consumers-mode/" target="_blank" rel="noopener">生产者消费者模式</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/31096468" target="_blank" rel="noopener">编译原理</a></li>
+<li><a href="https://www.zhihu.com/question/31295168/answer/51357942" target="_blank" rel="noopener">操作系统</a></li>
+<li><a href="http://jpkc.scezju.com/czxtyl/redir.php?catalog_id=106957" target="_blank" rel="noopener">ZJU 操作系统</a></li>
+<li><a href="https://www.zhihu.com/question/26646855" target="_blank" rel="noopener">前端架构</a></li>
+</ul>
+<h3 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h3><ul>
+<li><a href="https://www.jianshu.com/p/f1b7cb456d37" target="_blank" rel="noopener">LazyMan</a></li>
+<li><a href="https://www.cnblogs.com/onlymisaky/p/5425987.html" target="_blank" rel="noopener">Ajax 实现进度条</a></li>
+<li>Steps CSS<a href="https://line25.com/tutorials/how-to-create-flat-style-breadcrumb-links-with-css" target="_blank" rel="noopener">实现</a></li>
+<li>最长递增子序列</li>
+<li><ul>
+<li><a href="https://www.youtube.com/watch?v=rc2QdQ7U78I" target="_blank" rel="noopener">视频</a></li>
+<li><a href="https://www.geeksforgeeks.org/longest-consecutive-subsequence/" target="_blank" rel="noopener">Ans</a></li>
+</ul>
+</li>
+<li><a href="https://www.geeksforgeeks.org/longest-increasing-subsequence/" target="_blank" rel="noopener">动态规划</a></li>
+<li><a href="http://wuchong.me/blog/2014/03/25/interview-link-questions/" target="_blank" rel="noopener">链表问题集锦</a></li>
+<li><a href="https://www.cnblogs.com/BeyondAnyTime/archive/2012/07/06/2580026.html" target="_blank" rel="noopener">单链表相交</a></li>
+</ul>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/13/一次项目重构产生问题的总结/">一次项目重构产生问题的总结</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-13</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/PHP/">PHP</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/微信小程序/">微信小程序</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Websocket/">Websocket</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Swoole/">Swoole</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Laravel/">Laravel</a></span><div class="content"><h2 id="踩坑，记一次前后端通信重构"><a href="#踩坑，记一次前后端通信重构" class="headerlink" title="踩坑，记一次前后端通信重构"></a>踩坑，记一次前后端通信重构</h2><p>​    最近接手了一个小程序的后续开发，该小程序功能亮点是根据gps 定位获取校园内的车辆轨迹，然后呈现给用户，解决用户等车时不知道车辆什么时候会过来的问题。我会继续开发，用户叫车的功能。如果站台内等车的用户超过定值，则会通知后勤发车。</p>
+<p>​    生产版本的前后台请求是 <code>ajax轮询</code>，小程序设置定时器，每<code>1500ms</code>请求一次后台，后台接收到请求随后再去请求公交车的数据中心获取信息，再返还给前端。按照这个逻辑，如果此时100个用户在使用，每个用户使用15秒，那么将会产生1000次请求，而后台也会再请求1000次给公交车的数据中心。这样明显浪费了许多资源，并且后续开发叫车服务，需要实时统计当前叫车人数，我决定采用<code>websoket</code>通信，建立服务端和客户端建立长连接，服务端设置<code>timer</code>去获取公交数据，随后通过<code>webscoket</code>群发给客户端。这种逻辑也优雅很多。</p>
+<h4 id="候选方案"><a href="#候选方案" class="headerlink" title="候选方案"></a>候选方案</h4><p>服务器后台使用的是 <code>laravel</code>框架，<code>nginx</code>, <code>mysql</code>,<code>php-7.0</code></p>
+<ul>
+<li>nodejs + redis + socket.io</li>
+<li>swoole</li>
+<li>workerman</li>
+</ul>
+<p>看了各种文档介绍和 demo, 最终选择了 <code>swoole</code> 作为<code>websocket</code>服务器来处理和群发请求。加上<code>Laravel</code> 的 <code>artisan</code>命令配合, 操作起来得心应手。</p>
+<h3 id="重构流程"><a href="#重构流程" class="headerlink" title="重构流程"></a>重构流程</h3><p><strong>升级 php 版本</strong></p>
+<p>我首先把<code>php</code>7.0升级到了 7.1版本, 我在前两天的夜里，登上了生产服务器，把版本给升级了，没有产生大坑. 对原来的项目没有影响。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ add-repository ppa:ondrej/php</span><br><span class="line">$ apt update</span><br><span class="line">$ apt upgrade php</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* apt install php7.1-mbstring</span><br><span class="line">* apt install php7.1-gd</span><br><span class="line">* apt install php7.1-dom</span><br><span class="line">* apt install php7.1-mysql</span><br><span class="line">* 这些事部分需要手动添加的插件，按需使用。</span><br><span class="line">* 我敲了前三行命令，命令行就自动帮我把插件也连带升级了</span><br><span class="line">**/</span><br></pre></td></tr></table></figure>
+<p>升级完毕后查看应用，发现有部分页面打不开，上服务器开了debug，查看了一下，发现是 <code>storage</code>目录下的部分文件没有访问权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd /path/to/project</span><br><span class="line">$ ls -al // 查看项目文件所属用户和用户组，我这里的是 www-data</span><br><span class="line">$ sudo chown -R www-data:www-data ./storage</span><br><span class="line">// 更改了文件的权限即可</span><br></pre></td></tr></table></figure>
+<p><strong>安装 swoole</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ pecl install swoole</span><br><span class="line">$ php -i | grep &quot;php.ini&quot; // 查看php配置文件位置，添加swoole 插件</span><br><span class="line"></span><br><span class="line">$ echo extension=swoole.so &gt; /path/to/php.ini // 添加扩展</span><br><span class="line">or</span><br><span class="line">$ sudo vim /path/to/php.ini // 添加一行 extension=swoole.so 即可</span><br></pre></td></tr></table></figure>
+<p><strong>配置 Laravel，添加自定义类和 artisan 命令</strong></p>
+<p>首先新建一个 <code>artisan</code>命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd /path/to/project</span><br><span class="line">$ php artisan make:command SwooleCommand</span><br></pre></td></tr></table></figure>
+<p><code>artisan</code>命令部分代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">namespace App\Console\Commands;</span><br><span class="line">...</span><br><span class="line">class SwooleCommand extends Command</span><br><span class="line">&#123;</span><br><span class="line">    protected $signature = &apos;server:swoole &#123;action&#125;&apos;;</span><br><span class="line">	...</span><br><span class="line">    public function handle()</span><br><span class="line">    &#123;</span><br><span class="line">        if ($this-&gt;argument(&apos;action&apos;) == &apos;start&apos;) &#123;</span><br><span class="line">            $this-&gt;info(&apos;Swoole Server Started!&apos;);</span><br><span class="line">            $this-&gt;start();</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            $this-&gt;info(&apos;Error Parameter&apos;);</span><br><span class="line">            exit();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public function start()</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;server = new \swoole_websocket_server(&quot;0.0.0.0&quot;, 1024);</span><br><span class="line">        $handler = \App::make(&quot;App\Handlers\MapHandler&quot;); // 自定义类用于处理服务器回调</span><br><span class="line">        $this-&gt;server-&gt;on(&quot;Open&quot;, array($handler, &apos;onOpen&apos;));</span><br><span class="line">        $this-&gt;server-&gt;on(&quot;Close&quot;, array($handler, &apos;onClose&apos;));</span><br><span class="line">        $this-&gt;server-&gt;on(&quot;Message&quot;, array($handler, &apos;onMessage&apos;));</span><br><span class="line">        $this-&gt;server-&gt;start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>添加自定义类</strong></p>
+<p>我在 <code>app</code>目录下新建了 <code>Handlers</code>文件夹，并配置了 <code>composer.json</code>处理自定义类的自动加载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ vim composer.json</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  &quot;autoload&quot;: &#123;</span><br><span class="line">    &quot;classmap&quot;: [</span><br><span class="line">      &quot;database&quot;,</span><br><span class="line">      &quot;app/Handlers&quot; // 添加自定义类的路径</span><br><span class="line">    ]</span><br><span class="line">   ...</span><br><span class="line">   &#125;</span><br><span class="line">   ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>处理回调函数</strong></p>
+<p>我在配置 <code>artisan</code>命令的时候，有这样一行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$handler = \App::make(&quot;App\Handlers\MapHandler&quot;); // 自定义类用于处理服务器回调</span><br></pre></td></tr></table></figure>
+<p>这是通过 <code>laravel</code>的服务容器新建的类，通过这一行命令，可以让 <code>MapHandler</code>使用<code>laravel</code>框架的所有功能，不用去配置其他的，仅一行代码即可</p>
+<p>这是我的<code>MapHandler</code>这些回调函数的写法，都是参照了<code>swoole</code>的官方文档，你完全可以把<code>handler</code>当作一个<code>controller</code>，在这里使用<code>Model</code>,<code>Repository</code>以及各种类库，来处理你自己的业务逻辑。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// MapHandler</span><br><span class="line">namespace App\Handlers;</span><br><span class="line">use \swoole_websocket_server;</span><br><span class="line"></span><br><span class="line">public function __construct()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line">public function onOpen(swoole_websocket_server $server, $request)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line">public function onMessage(swoole_websocket_server $server, $frame)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line">public function ($server, $fd)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在<code>swoole</code>的<code>onMessage</code>回调中<code>$fd</code>为已连接的客户端编号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 向指定的连接的客户端发送通知。</span><br><span class="line">$server-&gt;push($fd, data)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// $server-&gt;connections 遍历所有websocket连接用户的fd，给所有用户推送</span><br><span class="line">foreach ($server-&gt;connections as $fd) &#123;</span><br><span class="line">	$this-&gt;server-&gt;push($fd, $data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong></p>
+<p>有一点要注意的是，推送的<code>$data</code>，只能以<code>string</code>形式传输，原先服务器都是直接返回<code>json</code>格式的数据。</p>
+<p>但是你可以使用<code>PHP</code>原生的<code>serialize()</code>方法序列化数据。客户端收到数据的时候反序列化即可</p>
+<p>在这里推荐一个 js库，在客户端解析数据</p>
+<p><a href="https://github.com/naholyr/js-php-unserialize" target="_blank" rel="noopener">https://github.com/naholyr/js-php-unserialize</a></p>
+<p>我昨晚把 <code>websocket</code>服务器配置好之后，以为万事大吉了，结果测试小程序的时候我<code>log</code>出来的数据是对的，但是运行的时候就是没法用，没报错，但是地图上的标记信息显示不出来。之前总是笨笨的使用<code>console.log</code>，后来嫌麻烦，测试时添加一个<code>var log = console.log.bind(console)</code>方法，使用的时候直接<code>log(target)</code>即可。但是这样还是不优雅，一方面是只能显示出特定变量的值，但是无法查看函数的运行轨迹和运行时每个阶段的值。</p>
+<p>一筹莫展找不到出错的地方时，突然想到了断点调试。以前总是嫌断点麻烦，其实是懒得去学，其实并不难。只是有的时候人有惰性，有<code>log</code>就挺好，杀鸡焉用牛刀？项目简单的时候，<code>log</code>一下确实简单，但是当项目复杂起来，逻辑和函数嵌套的时候，就需要更优雅更高效的调试方法。</p>
+<p>打了断点之后，发现原本用来绑定<code>wxml</code>页面的变量值，通过函数处理，并没有新增从服务器获取的数据，我一直以为是<code>unserialize</code>的库出现了问题，但是也没报错，数据比对之后也没有问题。因为前端的 js 代码并不是我写的，所以又要从头开始梳理代码逻辑，打开<code>git</code>一段一段的比对差异，寻找逻辑。最终锁定了处理服务器数据的那段代码。我把原先删掉的<code>ajax</code>轮询代码又放了上去，发现获取的数据是一个数组，数组中有包含了对象，而经过<code>unserialize</code>处理的数据返回的是一个对象。</p>
+<p>问题找到了，其实就是一个数组转对象的问题嘛，这还不简单，我根本没思考，写下了这段代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let arr = Array.prototype.slice.call(data)</span><br></pre></td></tr></table></figure>
+<p>然后又重新跑了一遍</p>
+<p>…</p>
+<p>…</p>
+<p>还是不行。上网查阅了一下。发现是自己记错了。</p>
+<p>上面的那行代码，是用来处理类数组对象的, 常见的为<code>arguments</code></p>
+<p>但是对象转数组就不是这样了。谷歌了一下，找到了解决办法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// obj 为要转换的对象，arr 为新生成的数组</span><br><span class="line">let arr = Object.keys(obj).map(key =&gt; obj[key])</span><br></pre></td></tr></table></figure>
+<p>Over !</p>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>这个项目还没做完，目前只是把之前的代码重构了，新功能还在开发中。不过错误和失败都是走向成功的阶梯，每一个用心解决的问题，都是一个宝贵的经验。可以不断加深自己的代码功底和对编程的理解。解决数组序列化的问题，我前后花了两个小时，解决断点纠错和对象转数组，前后花了5个小时。其实在经验丰富的开发者来看，都不是大问题。但是自己对<code>PHP</code>和<code>JavaScript</code>还有许多需要学习的地方。有些知识点当时用不到，就没看，有的知识点虽然看过了，但是实际遇到问题还是不会。都需要摸索和钻研，在这里和各位阅读的开发者共勉。</p>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/11/免密码操作 Git 仓库/">免密码操作 Git 仓库</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-11</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Git/">Git</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/基本操作/">基本操作</a></span><div class="content"><h2 id="免密码操作-Git-仓库"><a href="#免密码操作-Git-仓库" class="headerlink" title="免密码操作 Git 仓库"></a>免密码操作 Git 仓库</h2><p>自己经常会学习新知识，常常会把笔记或者经验记录在 md文档中，写完之后通过hexo 编译打包 push 到 github pages，写完之后一个命令 <code>hexo g -d</code>就 ok 了，很舒服的流程，但是常常需要输入账号和密码，自己有的时候写的私有项目会放在 bitbucket 上，<code>clone</code>的时候也要输密码，很烦。 想到服务器可以免密登陆，而且 git 仓库都可以设置 <code>ssh key</code>，搜索了一下果然可以。动几下键盘，以后就再也不用输入密码操作了。</p>
+<h5 id="设置-ssh-key"><a href="#设置-ssh-key" class="headerlink" title="设置 ssh key"></a>设置 ssh key</h5><p>如果你已经生成过公钥，跳过这步</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-key gen -t rsa</span><br><span class="line">// 酌情输入 passphrase, 这个是私钥的密码，用来解密。增强安全性</span><br><span class="line">// 如果不需要，输入命令后一路回车即可，公钥存储在 ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line">// 生成过公钥，但是私钥上密码了的话，每次操作还是需要输入私钥，但可以通过 ssh-agent 来保存私钥, 但不是永久的。</span><br><span class="line">$ ssh-agent</span><br><span class="line">$ eval $(ssh-agent -s) // 查看进程状态</span><br><span class="line">$ ssh-add ~/.ssh/id_rsa // 添加私钥，并且随后命令行输入私钥密码</span><br><span class="line">done !</span><br></pre></td></tr></table></figure>
+<h5 id="配置-github-ssh-key"><a href="#配置-github-ssh-key" class="headerlink" title="配置 github ssh key"></a>配置 github ssh key</h5><ul>
+<li>点击个人设置</li>
+<li>点击 SSH and GPG keys</li>
+<li>点击 New SSH key</li>
+<li>输入公钥中的数据</li>
+<li>done !</li>
+</ul>
+<h5 id="配置仓库的-origin"><a href="#配置仓库的-origin" class="headerlink" title="配置仓库的 origin"></a>配置仓库的 origin</h5><p>今后无论是 <code>clone</code>、<code>push</code>、<code>pr</code> 等操作，  直接通过 Clone with SSH 方式即可</p>
+<p>如果是已有仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v // 查看是否是 ssh 协议</span><br><span class="line">$ git remote rm origin // 如果是，删除origin地址</span><br><span class="line">$ git remote add ... // 添加origin地址</span><br></pre></td></tr></table></figure>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/11/PHP中常见的回调函数风格/">PHP中常见的回调函数风格</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-11</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/PHP/">PHP</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Coding-Style/">Coding Style</a></span><div class="content"><h2 id="PHP中常见的回调函数风格"><a href="#PHP中常见的回调函数风格" class="headerlink" title="PHP中常见的回调函数风格"></a>PHP中常见的回调函数风格</h2><h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$server-&gt;on(<span class="string">'Request'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="类静态方法"><a href="#类静态方法" class="headerlink" title="类静态方法"></a>类静态方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class A</span><br><span class="line">&#123;</span><br><span class="line">  static function foo() &#123;</span><br><span class="line">    //</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$server-&gt;on(&apos;Request&apos;, &apos;A::foo&apos;);</span><br><span class="line">$server-&gt;on(&apos;Request&apos;, array(&apos;A&apos;, &apos;foo&apos;));</span><br></pre></td></tr></table></figure>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function bar()</span><br><span class="line">&#123;</span><br><span class="line">  //</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$server-&gt;on(&apos;Request&apos;,&apos;bar&apos;);</span><br></pre></td></tr></table></figure>
+<h3 id="对象方法"><a href="#对象方法" class="headerlink" title="对象方法"></a>对象方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class A</span><br><span class="line">&#123;</span><br><span class="line">  function foo() &#123;</span><br><span class="line">    //</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$object = new A();</span><br><span class="line">$server-&gt;on(&apos;Request&apos;, array($object, &apos;foo&apos;));</span><br></pre></td></tr></table></figure>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/11/常用镜像源配置/">常用镜像源配置</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-11</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Config/">Config</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Mirrors/">Mirrors</a></span><div class="content"><h2 id="常用镜像源"><a href="#常用镜像源" class="headerlink" title="常用镜像源"></a>常用镜像源</h2><p>​    因为众所周知的原因，构建开发环境的时候常常会拉取程序需要的库，这时就需要镜像源来加速环境拉取。</p>
+<p>### </p>
+<h3 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line"></span><br><span class="line">$ npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>### </p>
+<h3 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ yarn config set registry https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line"></span><br><span class="line">npm install -g cyarn --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>### </p>
+<h3 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 修改配置文件，永久保留</span><br><span class="line">$ vim /etc/docker/daemon.json</span><br><span class="line"></span><br><span class="line">########################################################</span><br><span class="line">#......</span><br><span class="line">#&#123;</span><br><span class="line">#  &quot;registry-mirrors&quot;: [&quot;https://registry.docker-cn.com&quot;]</span><br><span class="line">#&#125;</span><br><span class="line"></span><br><span class="line">$ sudo service docker restart</span><br></pre></td></tr></table></figure>
+<p>### </p>
+<h3 id="Composer"><a href="#Composer" class="headerlink" title="Composer"></a>Composer</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com</span><br></pre></td></tr></table></figure>
+<p>### </p>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/10/一次服务器崩溃的问题分析和解决/">一次服务器宕机的分析和处理</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-10</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Common/">Common</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/ServerSide/">ServerSide</a></span><div class="content"><h2 id="一次服务器宕机的分析和处理"><a href="#一次服务器宕机的分析和处理" class="headerlink" title="一次服务器宕机的分析和处理"></a>一次服务器宕机的分析和处理</h2><h4 id="事发背景"><a href="#事发背景" class="headerlink" title="事发背景"></a>事发背景</h4><p>​    前端一枚，刚接手的项目，前后端全部自己在做。</p>
+<ul>
+<li>服务器环境<ul>
+<li>Ubuntu 16.04</li>
+<li>PHP 7.0</li>
+<li>Laravel 5.4</li>
+<li>Nginx</li>
+</ul>
+</li>
+</ul>
+<p>​    团队中同事下午通知我，阿里云盾通知昨夜服务器被攻击，中午服务器宕机，重启后解决。于是我根据所有线索，寻找了一下到底是什么问题</p>
+<h4 id="事情经过"><a href="#事情经过" class="headerlink" title="事情经过"></a>事情经过</h4><p>​    事发当天夜里，有一个来自乌克兰的 IP 通过 <code>post</code>请求，对服务器的 <code>/phppath/php</code>发起了<code>代码/命令执行</code>攻击。事发后我分别通过 <code>postman</code> 对该<code>URI</code> 发起了<code>GET</code> 和 <code>POST</code> 请求，均得到 <code>404</code>。暂时排除掉hacker 攻击成功的猜测。</p>
+<p>​    宕机，首先登陆服务器，进入日志目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd /var/log</span><br></pre></td></tr></table></figure>
+<p>分别查看了 <code>syslog</code>, <code>php-fpm</code>, <code>nginx</code>的日志，首先检查了今天凌晨的攻击，没有发现蛛丝马迹, <code>nginx</code>日志中在凌晨并没有对<code>/phppath/php</code>的访问记录，并且我刚才通过 <code>postman</code>发起的请求被记录在日志中，所以排除攻击成功。</p>
+<p>​    查看<code>syslog</code>时，发现中午某时，有这样一些记录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">// 以下代码均节选自日志</span><br><span class="line">/*</span><br><span class="line">*	一次请求发起的时候，php 执行 laravel 的命令，但是系统内存警告</span><br><span class="line">* 	随后系统关闭了 mysql 的进程，以获取内存</span><br><span class="line">*	日志中发现了有大量 php-fpm7.0 子线程存在，大约有几十条</span><br><span class="line">*	我猜测是 php-fpm的进程太多，内存占用高，导致数据库进程被停止</span><br><span class="line">*	请求进来的时候数据库被 kill，所以应用无法访问</span><br><span class="line">*/</span><br><span class="line">AliYunDun invoked oom-killer</span><br><span class="line">AliYunDun cpuset=/ mems_allowed=0</span><br><span class="line">Out of memory: Kill process 766 (mysqld)</span><br><span class="line">... (many processes)</span><br><span class="line">mysql.service: Main process exited, code=killed, status=9/KILL</span><br><span class="line">mysql.service: Unit entered failed state.</span><br><span class="line">mysql.service: Failed with result &apos;signal&apos;.</span><br><span class="line">mysql.service: Service hold-off time over, scheduling restart.</span><br><span class="line">Stopped MySQL Community Server.</span><br><span class="line">Starting MySQL Community Server...</span><br><span class="line">mysql.service: Main process exited, code=exited, status=1/FAILURE</span><br></pre></td></tr></table></figure>
+<p>​    于是便搜索了一下<code>fpm</code>优化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/php/&lt;version&gt;/fpm/pool.d/www.conf // php-version 为项目php版本号</span><br><span class="line"></span><br><span class="line">// 修改下列参数</span><br><span class="line">pm.start_server = 8</span><br><span class="line">pm.min_spare_servers = 8</span><br><span class="line">pm.max_spare_servers = 48 // 服务器内存为2g，修改为48较为合适</span><br><span class="line"></span><br><span class="line">:wq</span><br><span class="line"></span><br><span class="line">sudo service php&lt;version&gt;-fpm restart</span><br><span class="line">// 如果有报错， xxx not found, 可以先去看一下 /etc/init.d 中，有哪些服务，是不是服务名称写错了</span><br></pre></td></tr></table></figure>
+<p>​    希望上述方法可以解决服务器访问多时，cpu和内存占用过高的问题。</p>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/05/部署Homestead开发环境/">部署Homestead开发环境</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-05</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/PHP/">PHP</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Laravel/">Laravel</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/PHP/">PHP</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Homestead/">Homestead</a></span><div class="content"><h2 id="部署Homestead开发环境"><a href="#部署Homestead开发环境" class="headerlink" title="部署Homestead开发环境"></a>部署Homestead开发环境</h2><p>安装前提</p>
+<ul>
+<li>虚拟机 （ 推荐 virtualbox ）</li>
+<li>Vagrant</li>
+</ul>
+<p>上述两者安装完毕后，由于国内众所周知的原因，直接按照官方文档安装会很慢。</p>
+<p>所以有如下解决方法</p>
+<p>​    先运行 <code>$ vagrant box add laravel/homestead</code>，如果失败，安装不上，复制控制台中出现的virtualbox下载链接，复制到迅雷下载即可。<br>​    一般是 <code>https://vagrantcloud.com/laravel/boxes/homestead/versions/5.0.1/providers/virtualbox.box</code>, 其中版本号自行选择，发帖时最新版本为 5.0.1<br>​    下载完毕后进入 box 所在文件夹，创建 <code>metadata.json</code>文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot;: &quot;laravel/homestead&quot;,</span><br><span class="line">    &quot;versions&quot;: </span><br><span class="line">    [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;version&quot;: &quot;5.0.1&quot;,</span><br><span class="line">            &quot;providers&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                  &quot;name&quot;: &quot;virtualbox&quot;,</span><br><span class="line">                  &quot;url&quot;: &quot;path/to/your/box/file&quot; </span><br><span class="line">                  // 如果json和box在同一个文件夹，直接写 ./virtualbox.box即可</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​    运行<code>$ vagrant box add metadata.json</code> 添加 box</p>
+<p>​    Clone 配置文件并初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br><span class="line">$ git clone https://github.com/laravel/homestead.git Homestead</span><br><span class="line">$ cd Homestead</span><br><span class="line">$ bash init.sh // Mac / Linux...</span><br><span class="line">$ init.bat // Windows...</span><br></pre></td></tr></table></figure>
+<p>​    到此，安装已经完毕，后续配置，参考官方文档，就不过多赘述了</p>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2018/01/04/CSS 定位详解/">CSS 定位详解</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-01-04</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/CSS/">CSS</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Layout/">Layout</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Position/">Position</a></span><div class="content"><h2 id="CSS-定位详解"><a href="#CSS-定位详解" class="headerlink" title="CSS 定位详解"></a>CSS 定位详解</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 关键字 值 */</span></span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">static</span>;</span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">relative</span>;</span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">fixed</span>;</span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">sticky</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="取值"><a href="#取值" class="headerlink" title="取值"></a>取值</h3><p><code>static</code></p>
+<p>该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。此时 <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> 和 <code>z-index</code>属性无效。</p>
+<p><code>relative</code></p>
+<p>该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在此元素未添加定位时所在位置留下空白）。position:relative 对 table-*-group, table-row, table-column, table-cell, table-caption 元素无效。</p>
+<p><code>absolute</code></p>
+<p>不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并。</p>
+<p><code>fixed</code></p>
+<p>不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。<code>fixed</code>属性会创建新的层叠上下文。当元素祖先的 <code>transform</code>  属性非 <code>none</code> 时，容器由视口改为该祖先。</p>
+</div><hr></div><div class="recent-post-item"><a class="article-title" href="/2017/11/06/JavaScript 正则表达式/">JavaScript 正则表达式</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-11-06</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/JavaScript/">JavaScript</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Foundation/">Foundation</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Reg/">Reg</a></span><div class="content"><p>##JavaScript 正则表达式</p>
+<h3 id="正则字面量"><a href="#正则字面量" class="headerlink" title="正则字面量"></a>正则字面量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var reg = /\bis\b/</span><br><span class="line">var target = &apos;要匹配的文字&apos;</span><br><span class="line">var result = &apos;替换后的结果&apos;</span><br><span class="line">target.replace(reg, result)</span><br></pre></td></tr></table></figure>
+<h3 id="正构造函数"><a href="#正构造函数" class="headerlink" title="正构造函数"></a>正构造函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var reg = new RegExp(&apos;&apos;)</span><br><span class="line">var target = &apos;要匹配的文字&apos;</span><br><span class="line">var result = &apos;替换后的结果&apos;</span><br><span class="line">target.replace(reg, result)</span><br></pre></td></tr></table></figure>
+<h3 id="正则匹配修饰符"><a href="#正则匹配修饰符" class="headerlink" title="正则匹配修饰符"></a>正则匹配修饰符</h3><ul>
+<li>g: 全文搜索</li>
+<li>i: 忽略大小写，默认大小写敏感</li>
+<li>m: 多行搜索</li>
+</ul>
+<h3 id="原字符"><a href="#原字符" class="headerlink" title="原字符"></a>原字符</h3><p>正则表达式由两种基本字符类型组成</p>
+<ul>
+<li>原义文本字符    (写什么匹配什么)</li>
+</ul>
+<ul>
+<li><p>元字符 (正则中有特殊含义的非字母字符)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. * + ? $ ^ . | \ () &#123;&#125; []</span><br></pre></td></tr></table></figure>
+<p>|  字符  |     含义     |<br>| :–: | :——–: |<br>|  \t  |   水平制表符    |<br>|  \v  |   垂直制表符    |<br>|  \n  |    换行符     |<br>|  \r  |    回车符     |<br>|  \0  |    空字符     |<br>|  \f  |    换页符     |<br>| \cX  | 与X相对应的控制字符 |</p>
+</li>
+</ul>
+<h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><p>​    使用 [] 来构建一个类，泛指符合某些特性的对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'a1b2c3d4'</span>.replace(<span class="regexp">/[abc]/g</span>, <span class="string">'X'</span>)</span><br><span class="line">=&gt; <span class="string">'X1X2X3d4'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ^ 字符类中取反</span></span><br><span class="line"><span class="string">'a1b2c3d4'</span>.replace(<span class="regexp">/[^abc]/g</span>, <span class="string">'X'</span>)</span><br><span class="line">=&gt; <span class="string">'aXbXcXXX'</span></span><br></pre></td></tr></table></figure>
+<h3 id="范围类"><a href="#范围类" class="headerlink" title="范围类"></a>范围类</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'a1b2c3x4z5'</span>.replace(<span class="regexp">/[a-z]/g</span>, <span class="string">'Q'</span>)</span><br><span class="line">=&gt; <span class="string">'Q1Q2Q3Q4Q5'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 范围类的内部可以连写</span></span><br><span class="line">=&gt; [a-zA-Z] <span class="comment">// 匹配大小写字母</span></span><br><span class="line"></span><br><span class="line"><span class="string">'2016-01-02'</span>.replace(<span class="regexp">/[0-9]/g</span>, <span class="string">'N'</span>)</span><br><span class="line">=&gt; <span class="string">'NNNN-NN-NN'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配数字以及连字符</span></span><br><span class="line"><span class="string">'2016-01-02'</span>.replace(<span class="regexp">/[0-9-]/g</span>, <span class="string">'N'</span>)</span><br><span class="line">=&gt; <span class="string">'NNNNNNNNNN'</span></span><br></pre></td></tr></table></figure>
+<h3 id="预定义类"><a href="#预定义类" class="headerlink" title="预定义类"></a>预定义类</h3><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>等价类</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>[^\r\n]</td>
+<td>除了回车以及换行符外的所有字符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>[0-9]</td>
+<td>匹配数字</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>[^0-9]</td>
+<td>匹配非数字</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>[\t\n\x0B\f\r]</td>
+<td>匹配空白符,包括 tab,，换行，垂直tab，换页，回车</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>[^\t\n\x0B\f\r]</td>
+<td>非空白符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>[a-zA-Z_0-9]</td>
+<td>单词字符( 字母，数字，下划线 )</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>[^a-zA-Z_0-9]</td>
+<td>非单词字符</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>匹配一个 ab+数字+任意字符的字符串</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">=&gt;	/[ab0-9\w]/ =&gt; wrong</span><br><span class="line">=&gt;	ab[0-9][^\r\n] \\ 任意字符指除了回车和换行</span><br><span class="line">=&gt; ab\d. // better choice</span><br></pre></td></tr></table></figure>
+<h3 id="边界字符"><a href="#边界字符" class="headerlink" title="边界字符"></a>边界字符</h3><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>起始符</td>
+</tr>
+<tr>
+<td>$</td>
+<td>结束符</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>单词边界</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非单词边界</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;This is boundary&apos;.replace(/is/g, &apos;*&apos;)</span><br><span class="line">=&gt; &apos;Th* * boundary&apos;</span><br><span class="line"></span><br><span class="line">&apos;This is boundary&apos;.replace(/\bis\b/g, &apos;*&apos;)</span><br><span class="line">=&gt; &apos;This * boundary&apos;</span><br><span class="line"></span><br><span class="line">&apos;This is boundary&apos;.replace(/\Bis\b/g, &apos;*&apos;)</span><br><span class="line">=&gt;	&apos;Th* is boundary&apos;</span><br><span class="line"></span><br><span class="line">&apos;@123@abc@&apos;.replace(/@./g, &apos;Q&apos;)\</span><br><span class="line">=&gt;	&apos;Q23Qbc@&apos;</span><br></pre></td></tr></table></figure>
+<h3 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h3><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div><hr></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2018 By Chengyang</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.3"></script><script src="/js/fancybox.js?version=1.5.3"></script><script src="/js/sidebar.js?version=1.5.3"></script><script src="/js/copy.js?version=1.5.3"></script><script src="/js/fireworks.js?version=1.5.3"></script><script src="/js/transition.js?version=1.5.3"></script><script src="/js/scroll.js?version=1.5.3"></script><script src="/js/head.js?version=1.5.3"></script></body></html>
